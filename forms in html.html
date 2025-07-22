@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="forms.css" />
+    <title>FORMS IN HTML</title>
+  </head>
+  <body>
+    <div class="h1">
+      <h1>What is a Form in HTML?</h1>
+      <div class="p">
+        <p>
+          An HTML form is used to collect user input. It can include fields like
+          text boxes, radio buttons, checkboxes, drop-downs, and submit buttons.
+        </p>
+      </div>
+      <div class="h2">
+        <h2>EXAMPLE</h2>
+      </div>
+      <div class="container">
+        <div class="form1">
+          <form action="submit" method="post" target="_blank">
+            <label for="username"> username</label>
+            <input type="text" required/ placeholder="Name">
+            <label for="password">password</label>
+            <input type="password" required placeholder="Password"/ >
+            <input id="submit" type="submit" />
+          </form>
+        </div>
+        <div class="inputtypes">
+          <h2 class="h2">common input types</h2>
+          <div class="table">
+            <table>
+              <tr>
+                <th>text</th>
+                <td>for short text</td>
+              </tr>
+
+              <tr>
+                <th>password</th>
+                <td>hides input</td>
+              </tr>
+
+              <tr>
+                <th>email</th>
+                <td>for email validation</td>
+              </tr>
+
+              <tr>
+                <th>number</th>
+                <td>only allows numbers</td>
+              </tr>
+
+              <tr>
+                <th>date</th>
+                <td>calendar input</td>
+              </tr>
+
+              <tr>
+                <th>file</th>
+                <td>upload files</td>
+              </tr>
+
+              <tr>
+                <th>checkbox</th>
+                <td>select one or more options</td>
+              </tr>
+
+              <tr>
+                <th>radio</th>
+                <td>select only one option</td>
+              </tr>
+
+              <tr>
+                <th>submit</th>
+                <td>submit button</td>
+              </tr>
+
+              <tr>
+                <th>reset</th>
+                <td>reset all form fields</td>
+              </tr>
+            </table>
+            <div id="examples">
+              <form action="submit" method="post" target="_blank">
+                <label for="name"> fullname</label>
+                <input type="text" id="name" required />
+
+                <label for="email">email</label>
+                <input type="email" id="email" required />
+
+                <label for="gender">gender</label>
+                <input type="radio" name="gender" value="male" /> male
+                <input type="radio" name="gender" value="female" /> female
+
+                <label for="hobbies">hobbies</label>
+                <input type="radio" name="hobbies" value="cricket" /> cricket
+                <input type="radio" name="hobbies" value="gaming" /> gaming
+                <input type="radio" name="hobbies" value="football" /> football
+
+                <label for="country"> select country</label>
+                <select name="country" id="country">
+                  <option value="pakistan">pakistan</option>
+                  <option value="uk">uk</option>
+                  <option value="italy">italy</option>
+                </select>
+                <input id="submit2" type="submit" value="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
